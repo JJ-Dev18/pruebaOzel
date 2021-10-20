@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pruebaOzel/static/css/main.1e3cd052.chunk.css",
+    "main.js": "/pruebaOzel/static/js/main.a9a9e760.chunk.js",
+    "main.js.map": "/pruebaOzel/static/js/main.a9a9e760.chunk.js.map",
+    "runtime-main.js": "/pruebaOzel/static/js/runtime-main.6a514e98.js",
+    "runtime-main.js.map": "/pruebaOzel/static/js/runtime-main.6a514e98.js.map",
+    "static/js/2.2013ea5a.chunk.js": "/pruebaOzel/static/js/2.2013ea5a.chunk.js",
+    "static/js/2.2013ea5a.chunk.js.map": "/pruebaOzel/static/js/2.2013ea5a.chunk.js.map",
+    "static/js/3.b8ef3e68.chunk.js": "/pruebaOzel/static/js/3.b8ef3e68.chunk.js",
+    "static/js/3.b8ef3e68.chunk.js.map": "/pruebaOzel/static/js/3.b8ef3e68.chunk.js.map",
+    "index.html": "/pruebaOzel/index.html",
+    "static/css/main.1e3cd052.chunk.css.map": "/pruebaOzel/static/css/main.1e3cd052.chunk.css.map",
+    "static/js/2.2013ea5a.chunk.js.LICENSE.txt": "/pruebaOzel/static/js/2.2013ea5a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/pruebaOzel/static/media/Poppins-Regular.8081832f.ttf",
+    "static/media/fondo.png": "/pruebaOzel/static/media/fondo.b59657ab.png",
+    "static/media/webinar.png": "/pruebaOzel/static/media/webinar.56c69543.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a514e98.js",
+    "static/js/2.2013ea5a.chunk.js",
+    "static/css/main.1e3cd052.chunk.css",
+    "static/js/main.a9a9e760.chunk.js"
+  ]
+}
