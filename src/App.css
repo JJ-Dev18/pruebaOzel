@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family:'Poppins Bold' ;
+  src: url(./fonts/Poppins-Bold.ttf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family:'Poppins';
+  src: url(./fonts/Poppins-Regular.ttf);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  margin: 0;
+  padding: 0;
 }
+:root{
+  --color--fondo : #de8fb7;
+  --color--primary: #ae2ee3;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+body{
+  background: url(./img/fondo.png) center ;
+  background-position: 25% 45%;
+  background-attachment: fixed;
+  font-family: 'Poppins Bold';
+  text-decoration-color: aqua;
+  overflow: hidden;
+
+}
+.App{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+}
+.blue{
+  color: #2136f6;
+}
+span{
+  line-height: 50px;
+  background-color: var(--color--fondo);
+  font-size: 2rem;
   color: white;
 }
+h2{
+  color: blue;
+   background-color: var(--color--fondo);
+   margin-top: 35px;
+   margin-bottom: 55px;
+}
+.input__login{
+  border: 1px solid white;
+  border-radius: 15px;
+  background: transparent;
+  padding: 15px;
+}
+.input__check{
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.content__portada{
+  display: flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+}
+.content__form{
+ padding: 8rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  height: 350px;
+  justify-content: space-around;
+  color: white;
+  
+}
+form span{
+background: var(--color--fondo);
+font-size: 1rem;
+border-bottom: 1px solid white;
+}
+button{
+  background-color: var(--color--primary);
+  /* background-image: linear-gradient(); */
+  border :1px solid var(--color--primary);
+  border-radius: 15px;
+  width: 300px;
+  padding: 10px;
+  font-family: 'Poppins-Bold';
+  color: white;
+  display: flex;
+  justify-content: start;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+button:hover{
+  background: #1a39ad;
+  transform: scale(10deg);
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
-.App-link {
-  color: #61dafb;
+
+}
+button span{
+  font-family: 'Poppins-Bold' !important;
+  background: var(--color--fondo);
+  text-align: left;
+  font-size: 1.5rem;
+}
+.content__checkbox{
+  display: flex;
+}
+.overlay{
+ background-color: rgba(0, 0, 0, .3);
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.content__popup{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ background: white;
+ border-radius: 25px;
+ width: 450px;
+ height: 250px;
+ padding: 15px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.icono__close{
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:1500px){
+  span{
+    font-size: 1rem;
+    margin: 0;
+    line-height: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  .content__portada{
+    padding: 4rem;
   }
+  .content__webinar{
+    width: 600px;
+  }
+  .content__webinar img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:900px){
+  body{
+    overflow-y: scroll;
+  }
+ .App{
+   flex-direction: column;
+   overflow-y: scroll;
+ }
+ .content__portada{
+   margin-top: 100px;
+ }
+ .content__webinar{
+   width: 400px;
+ }
+ .content__webinar img{
+   width: 100%; 
+ }
+ .content__form{
+   padding: 2rem;
+ }
+ button{
+   padding: 10px;
+ }
 }
