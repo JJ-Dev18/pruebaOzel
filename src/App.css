@@ -9,6 +9,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 :root{
   --color--fondo : #de8fb7;
@@ -52,7 +53,15 @@ h2{
   border: 1px solid white;
   border-radius: 15px;
   background: transparent;
-  padding: 15px;
+  padding: 20px;
+  color: white;
+}
+.input__login::placeholder{
+  color: white;
+}
+.input__login:focus{
+  background:#1a39ad;
+  outline: white;
 }
 .input__check{
   border: 1px solid white;
@@ -60,6 +69,30 @@ h2{
   height: 40px;
   margin-right: 10px;
   cursor: pointer;
+  background: inherit;
+}
+input[type=checkbox]{
+  display: none;
+}
+input[type=checkbox] + label{
+  cursor: pointer;
+}
+input[type=checkbox]:checked + label::before{
+  content: '✓';
+  font-size: 25px;
+  color: white;
+}
+label::before{
+  content: '';
+  background: transparent;
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  text-shadow: 4px -2px 3px white;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
 }
 .content__portada{
   display: flex;
@@ -74,29 +107,30 @@ form{
   display: flex;
   flex-direction: column;
   font-family: 'Poppins';
-  height: 350px;
+  height: 250px;
   justify-content: space-around;
   color: white;
   
 }
 form span{
-background: var(--color--fondo);
-font-size: 1rem;
-border-bottom: 1px solid white;
+ background: none;
+ font-size: 1rem;
+/* border-bottom: 1px solid white; */
 }
 button{
   background-color: var(--color--primary);
   /* background-image: linear-gradient(); */
   border :1px solid var(--color--primary);
-  border-radius: 15px;
-  width: 300px;
-  padding: 10px;
+  border-radius: 25px;
+  width: 200px;
+  padding: 5px;
   font-family: 'Poppins-Bold';
   color: white;
   display: flex;
   justify-content: start;
   transition: all 1s ease;
   cursor: pointer;
+  
 }
 button:hover{
   background: #1a39ad;
@@ -108,9 +142,11 @@ button:hover{
 }
 button span{
   font-family: 'Poppins-Bold' !important;
-  background: var(--color--fondo);
+  background: none;
   text-align: left;
-  font-size: 1.5rem;
+   font-size: 1.2rem;
+  text-decoration: none;
+  margin-left: 20px;
 }
 .content__checkbox{
   display: flex;
@@ -147,6 +183,12 @@ button span{
 }
 
 @media screen and (max-width:1500px){
+  .input__login{
+    padding: 15px;
+  }
+  button{
+    width: 120px;
+  }
   span{
     font-size: 1rem;
     margin: 0;

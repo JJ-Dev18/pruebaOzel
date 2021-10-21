@@ -45,12 +45,14 @@ export const Formulario = () => {
   return (
     <div className="content__form">
       <div>
-        <span>¡Bienvenido, una experiencia digital  </span>
+        <span>¡Bienvenido al CX una experiencia digital Festival,</span>
         <span>completamente salida de la caja !</span>
-        <br/>
-        <br/>
-        <span className="blue">Diviértete y aprende de la mano de gúrus</span>
-        <span className="blue"> y expertos digitales en estos tres días festival</span>
+        <br />
+        <br />
+        <span className="blue">Diviértete y aprende de la mano de gúrus </span>
+        <span className="blue">
+          y expertos digitales en estos tres días festival.
+        </span>
       </div>
       <div>
         <form onSubmit={login}>
@@ -62,7 +64,7 @@ export const Formulario = () => {
             className="input__login"
             value={correo}
             required
-            disabled ={!check}
+            disabled={!check}
           />
           <button>
             <span>Ingresar</span>
@@ -71,11 +73,17 @@ export const Formulario = () => {
             <input
               type="checkbox"
               className="input__check"
+              id="check"
               onChange={handleInputCheckChange}
             />
-            <h3>
-              Para ver la politica de los datos haga clic <a href="" onClick={politicasOpen}>aqui</a>
-            </h3>
+            <label for="check">
+              
+              Para ver la politica de los datos haga clic{" "}
+              <a href="" onClick={politicasOpen}>
+                aqui
+              </a>
+            </label>
+         
           </div>
         </form>
       </div>
